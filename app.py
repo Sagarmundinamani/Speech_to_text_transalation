@@ -3,6 +3,8 @@ from googletrans import Translator
 from gtts import gTTS
 import pygame
 import os
+os.environ['SDL_VIDEODRIVER'] = 'dummy'
+os.environ['SDL_AUDIODRIVER'] = 'dummy'
 import time
 
 app = Flask(__name__)
